@@ -21,6 +21,10 @@ namespace validate_jwt
 
         static async Task Main()
         {
+            // Flip to true for ADAL logging -
+            // it's pretty verbose thus pretty handy.
+            LoggerCallbackHandler.UseDefaultLogging = false;
+
             AuthenticationContext context = new AuthenticationContext(authority);    
             DeviceCodeResult codeResult = await context.AcquireDeviceCodeAsync(resourceId, clientId);
             Console.BackgroundColor = ConsoleColor.DarkCyan;
