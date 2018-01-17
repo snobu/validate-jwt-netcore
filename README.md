@@ -7,7 +7,8 @@ $ dotnet restore
 $ dotnet run
 
 Using OAuth 2.0 Device Flow. You need to sign in.
-To sign in, use a web browser to open the page https://aka.ms/devicelogin and enter the code XXXXXXXX to authenticate.
+To sign in, use a web browser to open the page https://aka.ms/devicelogin
+and enter the code XXXXXXXX to authenticate.
 ...
 
 Azure AD returned this JWT:
