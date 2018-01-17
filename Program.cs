@@ -14,7 +14,8 @@ namespace validate_jwt
     {
         static string authority = "https://login.microsoftonline.com/swearjarbank.onmicrosoft.com";
         static string clientId = "202e7978-0008-4c07-8c54-440c9be7cb94"; // AConsoleApp
-        //static string resourceId = "https://graph.microsoft.com"; // Won't validate, JWT comes with a nonce in header
+        // static string resourceId = "https://graph.microsoft.com"; // Won't validate, JWT comes with a nonce in header
+        // also you should _never_ validate tokens that aren't yours to consume.
         static string resourceId = "https://swearjarbank.azurewebsites.net";
         static Uri redirectUri = new Uri("http://unnecessary");
 
