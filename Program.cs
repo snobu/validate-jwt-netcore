@@ -16,7 +16,9 @@ namespace validate_jwt
         static string clientId = "202e7978-0008-4c07-8c54-440c9be7cb94"; // AConsoleApp
         // static string resourceId = "https://graph.microsoft.com"; // Won't validate, JWT comes with a nonce in header
         // also you should _never_ validate tokens that aren't yours to consume.
-        static string resourceId = "https://swearjarbank.azurewebsites.net";
+        
+        // App Service Easy Auth needs AppId to validate token
+        static string resourceId = "c0b94ebd-7c76-4fa7-ade9-00047b5feb75"; // swearjarbank.azurewebsites.net
         static Uri redirectUri = new Uri("http://unnecessary");
 
         static async Task Main()
